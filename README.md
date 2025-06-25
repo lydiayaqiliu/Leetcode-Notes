@@ -1,0 +1,2 @@
+# Leetcode-Notes
+Documents thoughts
