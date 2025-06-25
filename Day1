@@ -1,0 +1,26 @@
+Two pointers.
+  #704: 
+    micmic human thought process -- when we perform binary research by eyes we first locate the two ends for the intervals, which justify our use of two pointers.
+      *35/34 not done.
+      *open/closed cases unimplemented.
+
+  #27:
+    Brute force the solution with a time complexity of O(nlog(n)).
+      *fast/slow pointers unimplemented.
+
+  #977:
+    First brute force the solution by calling sort and a for loop.
+    Then implement a two pointers solution (plus another pointer in the result list) to keep the complexity within O(n).
+
+Thoughts:
+      When two pointers are preferred (often better than one):
+    1. Binary search
+        One pointer is usually insufficient for correct narrowing
+        Standard form uses left and right
+    2. Sliding window problems
+        E.g., longest substring without repeating characters
+        Need a start and end pointer to represent the window
+    3. Partitioning arrays / linked lists
+        Sorting, Dutch national flag problem, etc.
+    4. Two-sum in sorted array
+        left, right = 0, len(nums) - 1
