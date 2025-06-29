@@ -1,0 +1,18 @@
+
+#### 长度最小的子数组
+
+**双指针遍历每一种subarray最小的可能**
+
+令 i, j 为 subarray 的起始点，即左右指针。
+
+令 i = 0, j= 0.
+
+首先移动右指针，在移动中我们要保持左指针不在右指针的绝对右侧。当左右指针框出一个满足条件的subarry时，我们想要知道有没有更小的subarray such that 以同一个右指针为终止。移动左指针直到和小于target，记录最小的subarray长度。接着继续向右移动右指针，直到右指针遍历完所有可能。
+
+此时双指针遍历了每一种以特定数值为右指针的sub array最小的可能。
+
+**Summing Over the Subaaray Interval**
+
+Using Sum(list) function will end up with a complexity O(n^2).
+
+Instead, when moving 右指针，记录每一次指针的数值，加起来。这样我们自然而然的拥有区间内数字的和。每次移动左指针，从和内减去左指针移动前的值。所以和永远是sum of values in the sliding window.
