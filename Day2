@@ -16,3 +16,9 @@
 Using Sum(list) function will end up with a complexity O(n^2).
 
 Instead, when moving 右指针，记录每一次指针的数值，加起来。这样我们自然而然的拥有区间内数字的和。每次移动左指针，从和内减去左指针移动前的值。所以和永远是sum of values in the sliding window.
+
+#### Matrix Problem
+
+**注意**
+tuple unpacking 别搞太复杂。
+
